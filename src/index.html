@@ -6,21 +6,39 @@
   </head>
   <body>
     <div class="container">
-      <h1>CHD → ISO Converter</h1>
+      <header>
+        <h1>CHD <span>&rarr;</span> ISO</h1>
+        <p class="subtitle">Fast & Reliable Image Conversion</p>
+      </header>
 
-      <div id="dropZone">
-        <p>Drag & Drop .CHD files here<br />or Click to Select</p>
-      </div>
+      <main>
+        <div id="dropZone" class="drop-zone">
+          <div class="drop-zone-content">
+            <div class="icon">📁</div>
+            <p>Drag & Drop <strong>.CHD</strong> files here</p>
+            <span class="or">or</span>
+            <button class="btn-secondary" id="browseBtn">Browse Files</button>
+          </div>
+        </div>
 
-      <button id="selectOutput">Select Output Folder</button>
-      <p id="outputPath">No output folder selected</p>
+        <section class="controls">
+          <div class="output-section">
+            <button id="selectOutput" class="btn-outline">Select Output Folder</button>
+            <p id="outputPath" class="path-display">No output folder selected</p>
+          </div>
+          
+          <button id="startBtn" class="btn-primary" disabled>Start Conversion</button>
+        </section>
 
-      <button id="startBtn">Start Conversion</button>
+        <section id="queueSection" class="queue-section">
+          <h2>Conversion Queue</h2>
+          <div id="queue" class="queue-list"></div>
+        </section>
+      </main>
 
-      <input type="file" id="fileInput" multiple hidden />
-
-      <div id="queue"></div>
+      <input type="file" id="fileInput" multiple hidden accept=".chd" />
     </div>
+
     <script src="renderer.js"></script>
   </body>
 </html>
