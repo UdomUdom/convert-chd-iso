@@ -18,7 +18,7 @@ This tool is designed for users who don’t want to deal with command-line usage
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 - Electron
 - HTML / CSS / JavaScript (no frameworks)
