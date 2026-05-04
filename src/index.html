@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <title>CHD to ISO Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>CHD → ISO Converter</h1>
+
+      <div id="dropZone">
+        <p>Drag & Drop .CHD files here<br />or Click to Select</p>
+      </div>
+
+      <button id="selectOutput">Select Output Folder</button>
+      <p id="outputPath">No output folder selected</p>
+
+      <button id="startBtn">Start Conversion</button>
+
+      <input type="file" id="fileInput" multiple hidden />
+
+      <div id="queue"></div>
+    </div>
+    <script src="renderer.js"></script>
+  </body>
+</html>

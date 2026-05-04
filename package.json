@@ -2,7 +2,7 @@
   "name": "convert_chd",
   "version": "1.0.0",
   "description": "convert chd files",
-  "main": "main.js",
+  "main": "src/main.js",
   "scripts": {
     "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
